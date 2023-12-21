@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <style>
+        /* Define CSS Variables for Color Scheme */
+        :root {
+            --primary-color: #3498db;
+            --secondary-color: #2ecc71;
+            --background-color: #ecf0f1;
+            --text-color: #333;
+        }
+
+        /* Global Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 20px;
+            padding: 20px;
+            background-color: var(--background-color);
+        }
+
+        /* Header Styles */
+        h1 {
+            color: #333;
+            border-bottom: 2px solid #333;
+            padding-bottom: 5px;
+        }
+
+        /* Paragraph Styles */
+        p {
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+
+        /* Apply different styles to even and odd paragraphs */
+        p:nth-child(even) {
+            background-color: #ddd;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        /* List Styles */
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            background-color: #ddd;
+            margin: 5px 0;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        /* Styles for elements with specific IDs */
+        #special-text {
+            font-weight: bold;
+            color: #008000;
+        }
+
+        /* Descendant Selectors to style nested elements */
+        main p {
+            font-style: italic;
+        }
+
+        aside li {
+            font-weight: bold;
+            color: #4CAF50;
+        }
+
+        /* Button Styles with CSS Transitions */
+        .button-container {
+            display: flex;
+            gap: 20px;
+        }
+
+        .button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: var(--primary-color);
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .button:hover {
+            background-color: #2980b9;
+            transform: scale(1.1);
+        }
+
+        /* Image Animation */
+        .rotate-image {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            transition: transform 1s ease;
+        }
+
+        .rotate-image:hover {
+            transform: rotate(360deg);
+        }
+
+        .container {
+            margin-right: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">The Indian Lawyers</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Dropdown
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+
+
+    <div class="container">
+        <img src="india.jpg" alt="law.jpg" width="1250" height="300">
+    </div>
+
+    <header>
+        <h1>Lawyer’s Portfolio Website</h1>
+        <img src="Justice-DY-chandrachud.jpg" alt="image.jpg" width="360" height="250"
+            style="float: right; margin-right: 10px;">
+    </header>
+    <main>
+        <h2>Dhananjaya Y. Chandrachud</h2>
+        <!-- Content goes here -->
+        <p>The only child of India's longest-serving chief justice, Y. V. Chandrachud, he was educated at Delhi
+            University
+            and Harvard University and has practiced as a lawyer for Sullivan & Cromwell and in the Bombay High Court.
+        </p>
+
+        <p class="highlight">After attending the Cathedral and John Connon School, Mumbai and St. Columba's School,
+            Delhi, he graduated with honours in economics and mathematics from St. Stephen's College, Delhi in 1979.[11]
+            He then obtained a Bachelor of Laws degree from the Faculty of Law at the University of Delhi in 1982,
+            followed by a Master of Laws degree from Harvard Law School in 1983. He was awarded the prestigious Inlaks
+            Scholarship, offered to Indian citizens pursuing graduate education abroad, and received the Joseph H. Beale
+            Prize at Harvard.[12] He stayed at Harvard to complete a Doctorate of Juridical Science, which he finished
+            in 1986.[13] His doctoral dissertation was on affirmative action where he considered the law in a
+            comparative framework.[14]</p>
+
+        <ul id="important-list">
+            <h1> Early life and education</h1>
+
+            <li>Doctorate of Juridical Science (SJD)</li>
+            <li>Master of Laws (LLM)</li>
+            <li>Bachelor of Laws (LLB)</li>
+        </ul>
+        <p id="special-text">He continued his academic journey at Harvard to complete a Doctorate of Juridical Science,
+            achieving this in 1986. His doctoral dissertation focused on affirmative action, examining the law in a
+            comparative framework.</p>
+
+        <p id="Special-text"> He pursued a Master of Laws degree from Harvard Law School in 1983. During his time at
+            Harvard, he was awarded the prestigious Inlaks Scholarship, which is granted to Indian citizens pursuing
+            graduate education abroad.</p>
+
+        <p id="special-text"> Dhananjaya Chandrachud obtained his LLB degree from the Faculty of Law at the University
+            of Delhi in 1982.</p>
+    </main>
+    <img class="rotate-image"
+        src="https://creazilla-store.fra1.digitaloceanspaces.com/cliparts/3514329/roundabout-sign-in-slovenia-clipart-sm.png"
+        alt="Rotating Image">
+
+    <main>
+        <h1>Career</h1>
+        <P id="Special-text">Chandrachud studied law at Delhi University in 1982 at a time when few jobs were available
+            to young law graduates. He worked for a while, as a junior advocate assisting lawyers and judges, including
+            drafting some briefs for Fali Nariman. After graduating from Harvard, Chandrachud first worked at the law
+            firm Sullivan and Cromwell. He described this experience as "sheer fluke" due to the strong pecking order
+            that existed at that time, and a strong bias against hiring Indians and men from developing countries.[15]
+            Upon returning to India, he practiced law at the Supreme Court of India and the Bombay High Court. He was
+            designated a Senior Advocate by the Bombay High Court in June 1998. That year, he was appointed an
+            Additional Solicitor General of India, a role he held until his appointment as a Judge.</P>
+    </main>
+    <main>
+        <ul data-category="important">
+            <h1>Notable judgments </h1>
+            <p id="special-text"> During his Supreme Court service, he has been on the highest number of constitutional
+                benches (five judges or more) constituted to hear matters on constitutional questions.[18] During his
+                tenure
+                at the Supreme Court, he has delivered judgements on Indian constitutional law, comparative
+                constitutional
+                law, human rights, gender justice, public interest litigations, commercial law and criminal law. </p>
+
+            <h1> Right to Privacy</h1>
+            <p id="special-text">mong his notable judgments is his lead opinion in the Justice K. S. Puttaswamy (Retd.)
+                and Anr. vs Union Of
+                India And Ors. case as part of a unanimous nine-judge bench decision of the Indian Supreme Court, which
+                affirmed that the right to privacy is a constitutionally guaranteed right.[19] Chandrachud grounded the
+                right to privacy in dignity, liberty, autonomy, bodily and mental integrity, self-determination and
+                across a
+                spectrum of protected rights. Writing for himself and three other judges, he stated:
+                Dignity cannot exist without privacy. Both reside within the inalienable values of life, liberty and
+                freedom
+                which the Constitution has recognised. Privacy is the ultimate expression of the sanctity of the
+                individual.
+                It is a constitutional value which straddles across the spectrum of fundamental rights and protects for
+                the
+                individual a zone of choice and self-determination.[19]</p>
+            <h1> Free speech</h1>
+            <p id="special-text">Terming dissent as "the safety valve of democracy",[28][29][30] he has authored
+                judgments upholding the right to the freedom of speech in numerous cases. In Indibility Creative Pvt Ltd
+                v State of West Bengal,[31] he authored a judgment which imposed a fine on the State of West Bengal and
+                granted remedial compensation for disallowing the screening of the political satire Bhobishyoter Bhoot
+                through extra-constitutional measures. The Court had, by an interim order, directed that there must be
+                no bar on the screening of the movie.[32][33] In the final judgment, Chandrachud held that even if there
+                was any apprehension of public discontent, police protection must be provided instead of prohibiting the
+                display of the movie. The judgment is noteworthy[34] for its recognition of the positive duty on the
+                State to protect the freedom of speech and expression. He held that:</p>
+
+    </main>
+    <a href="https://www.example.com">Example Link</a>
+
+    <footer>
+        <p>&copy; 2023 Styled HTML Document</p>
+    </footer>
+</body>
+
+</html>
